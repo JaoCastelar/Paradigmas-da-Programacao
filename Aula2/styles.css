@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #d1b30681;
+}
+
+div.container, div.div-form, div.pokedex {
+
+    display: flex;
+
+}
+
+.div-form {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div.pokedex {
+    flex: 1;
+    text-align: left;
+    font-family: cursive;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: #d1b306;
+    width: 35vw;
+    height: 230px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    font-family: cursive;
+}
+
+.btn {
+    width: 90px;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    font-family: cursive;
+}
+
+.btn:hover {
+    font-weight: bold;
+    border-color: white;
+}

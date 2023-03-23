@@ -1,0 +1,13 @@
+Fazer uma aplicação assíncrona com as seguintes características:
+2 variáveis: número da geração e nome de um pokemon
+Você deverá acessar a API com a lista de pokemon desta geração
+e conferir se o nome do pokemon informado está nesta lista.
+
+IMPORTANTE: A função que verifica se o nome do pokemón está na lista
+também deve ser uma promessa!
+
+Em caso de sucesso informe que o pokemon está na lista e exiba o seu 
+número.
+Em caso de erro exiba uma mensagem de erro.
+
+
