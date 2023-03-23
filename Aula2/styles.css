@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #d1b30681;
+    background-color: #06d1c081;
 }
 
 div.container, div.div-form, div.pokedex {
@@ -29,7 +29,7 @@ div.pokedex {
 }
 
 .form {
-    background-color: #d1b306;
+    background-color: #06d1c0;
     width: 35vw;
     height: 230px;
     text-align: center;
