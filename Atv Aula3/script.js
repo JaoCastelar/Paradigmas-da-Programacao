@@ -1,6 +1,8 @@
 
 let regexCEP = /^[0-9]{5}-?[0-9]{3}$/;
-let cep = document.getElementById("cep")
+let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let entradaCep = document.getElementById("cep");
+let entradaEmail = document.getElementById("email");
 
 function printa(txt, clear=false){
     let box = document.getElementById("resp");
@@ -11,13 +13,42 @@ function printa(txt, clear=false){
     box.innerHTML += txt + "<br />";
 }
 
-function validaCep(cep) {
+function validaCep() {
 
-    if (regexCEP.test(cep.value)) {
-        printa("CEP válido", true)
+    let cep = entradaCep.value;
+
+    if (regexCEP.test(cep)) {
+        printa("CEP válido.", true);
     }else{
-        printa("CEP inválido", true)
+        if(cep == ""){
+            printa("**CEP não pode ser vazio.", true)
+        }else {
+            printa("*CEP inválido.", true);
+        }
+        
     }
-    
-    
+
+}
+function validaEmail() {
+
+    let email = entradaEmail.value;
+
+    if (regexEmail.test(email)) {
+        printa("Email válido");
+    }else {
+        if(email == ""){
+            printa("**Email não pode ser vazio.")
+        }else {
+            printa("*Email inválido");
+        }
+        
+    }
+
+}
+
+function validar() {
+
+    validaCep();
+    validaEmail();
+
 }

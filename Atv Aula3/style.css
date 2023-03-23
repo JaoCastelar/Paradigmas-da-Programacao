@@ -1,0 +1,60 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+div.container, div.form, div.resp {
+
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+div.container {
+
+    background-color: rgb(186, 238, 247);
+    flex-direction: column;
+
+}
+
+div.form {
+
+    width: 20vw;
+    margin: 2em;
+    flex-direction: column;
+    background-color: rgb(95, 116, 187);
+    border-radius: 1em;
+    color: white;
+
+}
+
+button {
+
+    border-radius: 1em;
+    width: 10vw;
+    height: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button:hover {
+
+    font-weight: bold;
+    border: none;
+
+}
+input {
+
+    border: none;
+    height: 3vh;
+    
+}
